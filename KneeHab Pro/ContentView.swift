@@ -1,21 +1,8 @@
-//
-//  ContentView.swift
-//  KneeHab Pro
-//
-//  Created by 20532 on 6/6/2569 BE.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        AppRootView()
     }
 }
 
