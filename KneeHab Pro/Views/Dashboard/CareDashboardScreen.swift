@@ -1,8 +1,8 @@
 import SwiftUI
 
-struct KneeHabCareDashboardView: View {
-    @EnvironmentObject private var angleSource: KneeAngleSimulator
-    @Binding var selectedTab: AppTab
+struct CareDashboardScreen: View {
+    @EnvironmentObject private var angleSource: AngleService
+    @Binding var selectedTab: MainTab
 
     private let profile = RehabProfile.placeholder
 
@@ -343,7 +343,7 @@ struct KneeHabCareDashboardView: View {
         .background(Color(hex: "#F7F8FA"), in: RoundedRectangle(cornerRadius: 24, style: .continuous))
     }
 
-    private func careButton(title: String, icon: String, tab: AppTab) -> some View {
+    private func careButton(title: String, icon: String, tab: MainTab) -> some View {
         Button {
             selectedTab = tab
         } label: {
@@ -365,14 +365,14 @@ struct KneeHabCareDashboardView: View {
 }
 
 #Preview("Care Dashboard Theme") {
-    KneeHabCareDashboardPreviewHost()
+    CareDashboardPreviewHost()
 }
 
-private struct KneeHabCareDashboardPreviewHost: View {
-    @State private var selectedTab: AppTab = .dashboard
+private struct CareDashboardPreviewHost: View {
+    @State private var selectedTab: MainTab = .dashboard
 
     var body: some View {
-        KneeHabCareDashboardView(selectedTab: $selectedTab)
-            .environmentObject(KneeAngleSimulator())
+        CareDashboardScreen(selectedTab: $selectedTab)
+            .environmentObject(AngleService())
     }
 }

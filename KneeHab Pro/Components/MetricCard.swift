@@ -8,7 +8,7 @@ struct MetricCard: View {
     let tint: Color
 
     var body: some View {
-        KHCard(cornerRadius: 22) {
+        AppCard(cornerRadius: 22) {
             VStack(alignment: .leading, spacing: 13) {
                 HStack {
                     Image(systemName: icon)

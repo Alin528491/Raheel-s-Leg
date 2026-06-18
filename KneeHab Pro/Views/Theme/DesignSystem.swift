@@ -14,6 +14,12 @@ extension Color {
     static let khRed = Color(hex: "#EF4D5A")
     static let khPurple = Color(hex: "#7A67F8")
     static let khBorder = Color.black.opacity(0.08)
+    static let khCareLime = Color(hex: "#AAEE00")
+    static let khCareGreen = Color(hex: "#44CC00")
+    static let khCareSky = Color(hex: "#D8F3FF")
+    static let khCareCream = Color(hex: "#FFF4D9")
+    static let khCareSand = Color(hex: "#F8F0DE")
+    static let khCareBlueWash = Color(hex: "#DCEFFF")
 
     init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
@@ -29,6 +35,34 @@ extension Color {
             (a, r, g, b) = (255, 0, 0, 0)
         }
         self.init(.sRGB, red: Double(r) / 255, green: Double(g) / 255, blue: Double(b) / 255, opacity: Double(a) / 255)
+    }
+}
+
+struct CareBackground: View {
+    var body: some View {
+        GeometryReader { geo in
+            ZStack {
+                LinearGradient(
+                    colors: [
+                        Color.khCareCream,
+                        Color.khCareSand,
+                        Color.khCareBlueWash
+                    ],
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+
+                RoundedRectangle(cornerRadius: 64, style: .continuous)
+                    .fill(LinearGradient(
+                        colors: [Color(hex: "#B9E1FF"), Color(hex: "#8FB8FF")],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    ))
+                    .frame(width: geo.size.width * 1.16, height: geo.size.height * 0.48)
+                    .rotationEffect(.degrees(-8))
+                    .offset(x: -geo.size.width * 0.04, y: geo.size.height * 0.58)
+            }
+        }
     }
 }
 
@@ -64,7 +98,7 @@ struct ScreenHeader: View {
     }
 }
 
-struct KHCard<Content: View>: View {
+struct AppCard<Content: View>: View {
     var cornerRadius: CGFloat = 24
     @ViewBuilder let content: Content
 

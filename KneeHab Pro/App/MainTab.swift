@@ -1,6 +1,6 @@
 import SwiftUI
 
-enum AppTab: Int, CaseIterable, Identifiable {
+enum MainTab: Int, CaseIterable, Identifiable {
     case dashboard
     case measurement
     case exercises
@@ -12,7 +12,7 @@ enum AppTab: Int, CaseIterable, Identifiable {
         switch self {
         case .dashboard: "Dashboard"
         case .measurement: "Measure"
-        case .exercises: "Exercises"
+        case .exercises: "Workout"
         case .profile: "Profile"
         }
     }
@@ -21,7 +21,7 @@ enum AppTab: Int, CaseIterable, Identifiable {
         switch self {
         case .dashboard: "square.grid.2x2.fill"
         case .measurement: "angle"
-        case .exercises: "figure.strengthtraining.traditional"
+        case .exercises: "dumbbell.fill"
         case .profile: "person.fill"
         }
     }

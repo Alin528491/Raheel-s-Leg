@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.mcpli.e4f877af.2f112d2f</string>
+  <key>ProgramArguments</key>
+  <array>
+      <string>/Users/20532/.nvm/versions/node/v22.17.1/bin/node</string>
+      <string>/Users/20532/.npm/_npx/7526a5b3090fc900/node_modules/mcpli/dist/daemon/wrapper.js</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/Users/20532/Desktop/Code/KneeHab Pro</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>MCPLI_ORCHESTRATOR</key>
+    <string>launchd</string>
+    <key>MCPLI_SOCKET_ENV_KEY</key>
+    <string>MCPLI_SOCKET</string>
+    <key>MCPLI_SOCKET_PATH</key>
+    <string>/var/folders/j4/gssx9rjd3lvb_f7dgr7hmnjh0000gp/T/mcpli/e4f877af/2f112d2f.sock</string>
+    <key>MCPLI_CWD</key>
+    <string>/Users/20532/Desktop/Code/KneeHab Pro</string>
+    <key>MCPLI_TOOL_TIMEOUT_MS</key>
+    <string>90000</string>
+    <key>MCPLI_COMMAND</key>
+    <string>node</string>
+    <key>MCPLI_ARGS</key>
+    <string>[&quot;/Users/20532/XcodeBuildMCP/build/index.js&quot;]</string>
+    <key>MCPLI_SERVER_ENV</key>
+    <string>{}</string>
+    <key>MCPLI_ID_EXPECTED</key>
+    <string>2f112d2f</string>
+    <key>PATH</key>
+    <string>/Users/20532/.npm/_npx/7526a5b3090fc900/node_modules/.bin:/Users/20532/Desktop/Code/KneeHab Pro/node_modules/.bin:/Users/20532/Desktop/Code/node_modules/.bin:/Users/20532/Desktop/node_modules/.bin:/Users/20532/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/Users/20532/.nvm/versions/node/v22.17.1/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/Users/20532/.codex/tmp/arg0/codex-arg0RlOSSg:/Users/20532/.antigravity/antigravity/bin:/Users/20532/.nvm/versions/node/v22.17.1/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/Users/20532/.local/bin:/Users/20532/.local/bin:/Users/20532/.lmstudio/bin:/Applications/Codex.app/Contents/Resources</string>
+    <key>MCPLI_TIMEOUT</key>
+    <string>1800000</string>
+  </dict>
+
+  <key>Sockets</key>
+  <dict>
+    <key>MCPLI_SOCKET</key>
+    <dict>
+      <key>SockPathName</key>
+      <string>/var/folders/j4/gssx9rjd3lvb_f7dgr7hmnjh0000gp/T/mcpli/e4f877af/2f112d2f.sock</string>
+      <key>SockPathMode</key>
+      <integer>384</integer>
+    </dict>
+  </dict>
+  <key>KeepAlive</key>
+  <dict>
+    <key>SuccessfulExit</key>
+    <false/>
+  </dict>
+  <key>ProcessType</key>
+  <string>Background</string>
+</dict>
+</plist>

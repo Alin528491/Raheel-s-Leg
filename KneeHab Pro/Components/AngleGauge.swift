@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct AngleGaugeView: View {
+struct AngleGauge: View {
     let angle: Double
     var target: Double = 120
     var tint: Color = .khBlue
@@ -41,7 +41,7 @@ struct AngleGaugeView: View {
 }
 
 #Preview("Angle Gauge") {
-    AngleGaugeView(angle: 82, target: 120)
+    AngleGauge(angle: 82, target: 120)
         .padding()
         .background(Color.khBackground)
 }
